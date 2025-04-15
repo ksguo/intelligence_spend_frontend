@@ -83,7 +83,8 @@ const Inovice_upload = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto text-center space-y-6">
+    <div className="min-h-[calc(100vh-220px)] flex flex-col justify-center py-16 mt-12">
+    <div className="w-full max-w-md mx-auto text-center space-y-6 ">
       <h1 className="text-3xl font-bold tracking-tight">
       Invoice Analysis
       </h1>
@@ -164,6 +165,7 @@ const Inovice_upload = () => {
       <div className="text-sm text-muted-foreground">
       Support for PDF, JPG, JPEG and PNG formats
       </div>
+    </div>
     </div>
   );
 };
