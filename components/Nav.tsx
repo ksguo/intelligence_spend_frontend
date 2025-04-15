@@ -22,6 +22,7 @@ const navItems: NavItem[] = [
     { name: "Inovice", path: "/invoice" },
     {name:"Analyze", path:"/analyze"},
     { name: "Contact", path: "/contact" },
+    {name:"Demo",path:"/demo"},
 ];
 
 
