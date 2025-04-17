@@ -22,7 +22,7 @@ const AboutPage = () => {
                 <div>
                     <h2 className="text-3xl font-bold mb-6">Our Story</h2>
                     <p className="text-lg text-muted-foreground mb-4">
-                        Founded in 2023, Intelligence Spend began with a simple question: why is it so difficult for individuals to understand their personal spending habits?
+                        Founded in 2025, Intelligence Spend began with a simple question: why is it so difficult for individuals to understand their personal spending habits?
                     </p>
                     <p className="text-lg text-muted-foreground mb-4">
                         Our team of finance enthusiasts and data scientists came together with a shared vision - to create a platform that helps people gain valuable insights from their shopping data and make smarter financial decisions.
@@ -179,7 +179,7 @@ const AboutPage = () => {
                     We&apos;re currently in beta testing. If you&apos;d like to test our platform, please send us an email to request an invitation code.
                 </p>
                 <Button asChild variant="outline" className="border-blue-500 text-blue-600 hover:bg-blue-50">
-                    <Link href="mailto:contact@intelligence-spend.com?subject=Invitation%20Code%20Request">
+                    <Link href="mailto:contact@kesheng.me?subject=Invitation%20Code%20Request">
                         Request Invitation Code
                     </Link>
                 </Button>

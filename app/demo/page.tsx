@@ -11,7 +11,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const DemoPage = () => {
- 
+
   const [activeTab, setActiveTab] = useState("overview");
   const [isUploading, setIsUploading] = useState(false);
   const [hasUploaded, setHasUploaded] = useState(false);
@@ -96,13 +96,7 @@ const DemoPage = () => {
 
             <div className="relative rounded-lg overflow-hidden shadow-xl h-[400px]">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/90 to-indigo-600/90 z-10 opacity-90"></div>
-              <Image
-                src="/images/dashboard-preview.jpg"
-                alt="Dashboard Preview"
-                fill
-                style={{ objectFit: "cover" }}
-                className="z-0"
-              />
+
               <div className="absolute inset-0 flex items-center justify-center z-20">
                 <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl w-4/5">
                   <h3 className="text-2xl font-bold text-white mb-4">Transform Your Financial Understanding</h3>
@@ -132,8 +126,8 @@ const DemoPage = () => {
                     <p className="text-lg font-medium mb-2">Drag and drop your receipt here</p>
                     <p className="text-muted-foreground mb-6">Supports JPG, PNG and PDF files</p>
                     <div className="flex justify-center">
-                      <Button 
-                        onClick={simulateUpload} 
+                      <Button
+                        onClick={simulateUpload}
                         disabled={isUploading}
                         className="relative overflow-hidden"
                       >
@@ -209,7 +203,7 @@ const DemoPage = () => {
         <TabsContent value="insights">
           <div className="space-y-8">
             <h2 className="text-2xl font-bold text-center">Your Spending Analysis</h2>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
@@ -221,15 +215,15 @@ const DemoPage = () => {
                 <CardContent className="h-[300px] flex items-center justify-center">
                   <div className="w-full h-full relative">
                     <Image
-                      src="/images/pie-chart-demo.png"
-                      alt="Spending Categories"
+                      src="/asset/pie-chart-demo.png"  
+                      alt="Spending Trend"
                       fill
                       style={{ objectFit: "contain" }}
                     />
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card>
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
@@ -240,7 +234,7 @@ const DemoPage = () => {
                 <CardContent className="h-[300px] flex items-center justify-center">
                   <div className="w-full h-full relative">
                     <Image
-                      src="/images/trend-chart-demo.png"
+                      src="/asset/trend-chart-demo.png"  
                       alt="Spending Trend"
                       fill
                       style={{ objectFit: "contain" }}
@@ -249,7 +243,7 @@ const DemoPage = () => {
                 </CardContent>
               </Card>
             </div>
-            
+
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -274,8 +268,8 @@ const DemoPage = () => {
                           <span className="font-medium">{item.amount}</span>
                         </div>
                         <div className="w-full bg-gray-200 rounded-full h-2">
-                          <div 
-                            className={`h-2 rounded-full ${item.color}`} 
+                          <div
+                            className={`h-2 rounded-full ${item.color}`}
                             style={{ width: item.percentage }}
                           ></div>
                         </div>
@@ -288,7 +282,7 @@ const DemoPage = () => {
                 </div>
               </CardContent>
             </Card>
-            
+
             <div className="flex justify-center">
               <Button onClick={() => setActiveTab("recommendations")}>
                 View Recommendations <ArrowRight className="ml-2 h-4 w-4" />
@@ -304,7 +298,7 @@ const DemoPage = () => {
             <p className="text-center text-muted-foreground max-w-2xl mx-auto">
               Based on your shopping patterns, we&apos;ve identified these opportunities to optimize your spending.
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-l-4 border-l-blue-500">
                 <CardHeader>
@@ -330,7 +324,7 @@ const DemoPage = () => {
                   </ul>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-l-4 border-l-purple-500">
                 <CardHeader>
                   <CardTitle className="text-xl">Bulk Buying Opportunities</CardTitle>
@@ -355,7 +349,7 @@ const DemoPage = () => {
                   </ul>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-l-4 border-l-indigo-500 md:col-span-2">
                 <CardHeader>
                   <CardTitle className="text-xl">Seasonal Spending Alert</CardTitle>
@@ -381,7 +375,7 @@ const DemoPage = () => {
                 </CardContent>
               </Card>
             </div>
-            
+
             <div className="text-center pt-8">
               <h3 className="text-xl font-bold mb-6">Ready to gain control of your spending?</h3>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
