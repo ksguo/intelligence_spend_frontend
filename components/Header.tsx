@@ -2,6 +2,7 @@ import Nav from "./Nav"
 import LoginButton from "./LoginButton"
 import Image from "next/image"
 import Link from "next/link"
+import MobileNav from "./MobileNav"
 
 const Header = () => {
     return (
@@ -20,9 +21,13 @@ const Header = () => {
                         </div>
                     </Link>
                 </div>
+                <div className="flex lg:hidden">
+                <MobileNav />
+                </div>
                 <Nav />
-                <div className="flex-grow"></div>
+                <div className="hidden lg:flex flex-1 justify-end">
                 <LoginButton />
+                </div>
             </header>
         </div>
     )

@@ -33,7 +33,7 @@ const Nav: FC = () => {
     const pathname = usePathname();
 
     return (
-        <div>
+        <div className="hidden lg:flex lg:gap-4 lg:items-center">
             <NavigationMenu>
                 <NavigationMenuList>
                     {navItems.map((item) => (
